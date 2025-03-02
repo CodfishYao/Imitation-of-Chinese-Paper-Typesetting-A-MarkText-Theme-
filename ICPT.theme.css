@@ -1,0 +1,181 @@
+/** Imitation of Chinese Paper Typesetting **/
+/*modified by CodfishYao（https://github.com/CodfishYao）*/
+.hf-container,
+.markdown-body {
+  font-family: 'Times New Roman', 'SimSun';
+  font-size: 1em;
+  color: #212121;
+}
+
+:root {
+  --footerHeaderBorderColor: #1c1c1c;
+}
+.hf-container {
+  font-size: 0.75em;
+}
+.page-header:not(.simple) .hf-container {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--footerHeaderBorderColor);
+}
+.page-footer:not(.simple) .hf-container {
+  padding-top: 2px;
+  border-top: 1px solid var(--footerHeaderBorderColor);
+}
+
+.footnotes {
+  font-size: 0.75em;
+  opacity: 0.9;
+}
+.footnotes > hr:first-of-type {
+  width: 250px;
+  height: 1px;
+  background: var(--footerHeaderBorderColor);
+}
+.footnotes > ol > li > p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/*标题*/
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  color: #282828;
+}
+
+.markdown-body h1 {
+  font-family:'Times New Roman', 'SimHei';
+  font-size: 1.4em;
+  text-align: center;
+}
+.markdown-body h2 {
+  font-family:'Times New Roman', 'SimHei';
+  font-size: 1.3em;
+}
+.markdown-body h3 {
+  font-family:'Times New Roman', 'SimHei';
+  font-size: 1.2em;
+}
+.markdown-body h4,
+.markdown-body h5 {
+  font-family:'Times New Roman', 'SimSun';
+  font-size: 1.125em;
+}
+.markdown-body h6 {
+  font-family:'Times New Roman', 'SimSun';
+  font-size: 1.05em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/*段落&文本*/
+.markdown-body a {
+  color: #212121;
+  text-decoration: underline;
+}
+
+.markdown-body p {
+  font-size: 12pt;
+  margin: 0;
+  line-height: 24pt;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.markdown-body li p {
+  font-size: 12pt;
+  margin: 0;
+  line-height: 18pt;
+  text-indent: 0em;
+}
+
+.markdown-body .name {
+  font-family:'Times New Roman', 'KaiTi';
+  font-size: 12pt;
+  margin: 0;
+  line-height: 18pt;
+  text-indent: 0em;
+  text-align: center;
+}
+
+.markdown-body .caption {
+  font-family:'Times New Roman', 'SimSun';
+  font-size: 10.5pt;
+  font-weight: bold;
+  margin: 0;
+  line-height: 15pt;
+  text-indent: 0em;
+  text-align: center;
+}
+
+.markdown-body hr {
+  background-color: #b0b0b0;
+  height: 1px;
+}
+
+.markdown-body blockquote {
+  border: none;
+  color: #282828;
+  padding: 0 1em;
+  margin-left: 20px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+}
+/*表格*/
+.markdown-body table{
+  border-top: 0;
+  border-bottom: 1.5pt solid #1a1a1a;
+  border-left: 0;
+  border-right: 0;
+  border-spacing: 0;
+}
+
+.markdown-body table th{
+  border-top: 1.5pt solid #1a1a1a;
+  border-bottom: 1pt solid #1a1a1a;
+  border-left: 0;
+  border-right: 0;
+  padding: 2px 6px;
+}
+
+.markdown-body table td{
+  border: 0;
+  padding: 2px 6px;
+}
+
+.markdown-body table tr {
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background: none;
+}
+/*图片*/
+.markdown-body img[data-align="center"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.markdown-body img[data-align="right"] {
+  display: block;
+  margin: 0.5em auto;
+}
+
+.markdown-body img[data-align="left"] {
+  display: block;
+  margin: 0.5em auto;
+}
